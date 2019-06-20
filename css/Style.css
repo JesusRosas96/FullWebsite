@@ -101,11 +101,6 @@ header .resaltado {
   width: 100%;
 }
 
-header .actual a {
-  color:#1293d4;
-  font-weight:bold;
-}
-
 header a:hover {
   color:#1293d4;
   font-weight:bold;
@@ -313,4 +308,116 @@ footer {
 	.contenedor_tarjeta:hover figure {
 		transform: perspective(600px) rotateY(0deg);	
 	}
+}
+
+/* Lateral */
+aside#lateral {
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+/* Main-col */
+article#main-col {
+  float:left;
+  width:65%;
+  padding-top: 20px;
+  text-align: justify;
+}
+
+/* Servicios */
+ul#servicios li {
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+ul#servicios {
+  padding-top: 20px;
+}
+
+ul#servicios figure {
+  padding-top: 5px;
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
+}
+
+.oscuro{
+  padding:15px;
+  background:#35424a;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+  width:80%;
+}
+
+.oscuro img {
+  width:100%;
+  text-align: center;
+}
+
+/* Estilos para el formulario de contacto */
+
+input, textarea{
+  width: 100%;
+  height: 35px;
+  border: 1px solid gray; 
+  margin-bottom: 5px;
+}
+
+textarea{
+  height: 120px;
+}
+
+input[type='submit']{
+  background-color: #e8491d;
+  color: #fff;  
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #marca,
+  header nav,
+  header nav li,
+  #boletin h1,
+  #boletin form,
+  #cajas .caja,
+  article#main-col,
+  aside#lateral{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #boletin h1{
+    margin-top:40px;
+  }
+
+  #boletin button{
+    display:block;
+    width:100%;
+  }
+
+  #boletin form input[type="email"]{
+    width:100%;
+    margin-bottom:5px;
+  }
+
+  input, textarea{
+    width: 98%; 
+  }
+}
+
+li .imagen {
+	width: 50%;
+}
+.imagen img {
+	width: 100%;
 }
